@@ -203,12 +203,12 @@ class CreateCenterline:
                 geom1 = (selection[0].geometry()).asPolyline()
                 line = LineString((selection[1].geometry()).asPolyline())
                 new_line_array = []
-                print('Hello World')
+                #print('Hello World')
                 for i in geom1:
                     p = Point(i)
                     np = line.interpolate(line.project(p))
-                    print(p)
-                    print(np)
+                    #print(p)
+                    #print(np)
                     p = QgsPoint(p.x, p.y)
                     np = QgsPoint(np.x, np.y)
                     new_pt = (p[0]+np[0])/2, (p[1]+np[1])/2
@@ -221,6 +221,7 @@ class CreateCenterline:
                 feat.setGeometry(new_line)
                 layer.dataProvider().addFeatures([feat])
                 QgsMapLayerRegistry.instance().addMapLayer(layer)
+                layer.triggerRepaint()
             else:
                 mw = self.iface.mainWindow()
                 QMessageBox.warning(mw, "Create Centerline", "Select two and only two lines")
