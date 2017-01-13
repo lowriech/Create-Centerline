@@ -1,7 +1,7 @@
 Plugin Builder Results
 
 Your plugin CreateCenterline was created in:
-    /Users/clowrie/Desktop/Scripts/Created PyQGIS/CreateCenterline
+    /Users/clowrie/Desktop/Scripts/CreateCenterline
 
 Your QGIS plugin directory is located at:
     /Users/clowrie/.qgis2/python/plugins

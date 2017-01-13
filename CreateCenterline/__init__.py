@@ -3,10 +3,10 @@
 /***************************************************************************
  CreateCenterline
                                  A QGIS plugin
- Creates a centerline from parallel lines
+ Creates a centerline
                              -------------------
-        begin                : 2016-10-12
-        copyright            : (C) 2016 by Chris Lowrie
+        begin                : 2017-01-13
+        copyright            : (C) 2017 by Chris Lowrie
         email                : lowriech@msu.edu
         git sha              : $Format:%H$
  ***************************************************************************/

@@ -1,11 +1,11 @@
 #/***************************************************************************
 # CreateCenterline
 #
-# Creates a centerline from parallel lines
+# Creates a centerline
 #							 -------------------
-#		begin				: 2016-10-12
+#		begin				: 2017-01-13
 #		git sha				: $Format:%H$
-#		copyright			: (C) 2016 by Chris Lowrie
+#		copyright			: (C) 2017 by Chris Lowrie
 #		email				: lowriech@msu.edu
 # ***************************************************************************/
 #
@@ -74,7 +74,7 @@ default: compile
 compile: $(COMPILED_RESOURCE_FILES)
 
 %.py : %.qrc $(RESOURCES_SRC)
-	pyrcc4 -o $*.py  $<
+	pyrcc5 -o $*.py  $<
 
 %.qm : %.ts
 	$(LRELEASE) $<
